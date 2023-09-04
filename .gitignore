@@ -1,24 +1,38 @@
-# Windows thumbnail cache files
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
+# Ignore bundler config.
+/.bundle
 
-# Dump file
-*.stackdump
+# Ignore the specific database config file.
+/config/database.yml
 
-# Folder config file
-[Dd]esktop.ini
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
 
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
+# Ignore bundler gems.
+/vendor/bundle
 
-# Windows shortcuts
-*.lnk
+# Ignore application's specific configuration file
+/config/credentials.yml.enc
+/config/master.key
+
+# Ignore files related to IDE
+/.vscode
+/.idea/
+/.rubymine*
+/.ruby-version
+/.ruby-gemset
+
+# Ignore node modules
+/node_modules
+
+# Ignore precompiled assets for production environment
+/public/assets
