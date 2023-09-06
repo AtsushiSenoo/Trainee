@@ -10,9 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_02_124443) do
-  create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", comment: "ユーザー情報", force: :cascade do |t|
-    t.string "name", null: false, comment: "お名前"
+ActiveRecord::Schema[7.0].define(version: 2023_09_06_135604) do
+  create_table "plactices", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", comment: "練習メモ", force: :cascade do |t|
+    t.string "name", null: false, comment: "練習名"
+    t.integer "weight", comment: "重量"
+    t.integer "rep", comment: "回数"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
