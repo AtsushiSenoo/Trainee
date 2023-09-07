@@ -1,0 +1,3 @@
+class Plactice < ApplicationRecord
+
+end

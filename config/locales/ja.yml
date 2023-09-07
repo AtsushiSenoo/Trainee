@@ -1,0 +1,5 @@
+ja:
+  activerecord:
+    attributes:
+      plactice:
+        name: 名前
