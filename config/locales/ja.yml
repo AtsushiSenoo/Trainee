@@ -2,4 +2,4 @@ ja:
   activerecord:
     attributes:
       plactice:
-        name: 名前
+        name: トレーニング名

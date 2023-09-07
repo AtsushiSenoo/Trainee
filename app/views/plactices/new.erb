@@ -9,7 +9,12 @@
        <%= f.text_field :name, size: 40, placeholder: 'サンプル', class: 'form-control' %>
       </div>
     </div>
-  <%end%>
+
+    <div class="d-grid gap-2 col-6 mx-auto"> 
+      <%= f.button '登録', class: 'btn btn-lg btn-primary' %>
+    </div>
+
+  <% end %>
 
 </div>
  <%= render 'layouts/footer' %>
