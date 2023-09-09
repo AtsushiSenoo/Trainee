@@ -1,25 +1,32 @@
 class PlacticesController < ApplicationController
-  def index
-    @plactice = Plactice.new
-  end
-
   def new
     @plactice = Plactice.new
   end
 
+  def confirm
+    @plactice = Plactice.new(plactice_params)
+      if @plactice.valid?
+      # バリデーションが通った場合は confirm ページに偏移
+        render 'confirm'
+        else
+      # バリデーションエラーがある場合は入力ページに戻る
+        render 'new'
+      end
+  end
+
+
   def create
     @plactice = Plactice.new(plactice_params)
-    if @plactice.save
-      redirect_to @plactice, notice: 'トレーニングデータが正常に作成されました。'
-    else
-      render :new
-    end
+    @plactice.save
+  end
+
+  def index
+
   end
 
   private
 
   def plactice_params
-    params.require(:plactice).permit(:name, :weight, :rep)
+    params.require(:plactice).permit(:name)
   end
 end
-
