@@ -1,0 +1,20 @@
+<div class="container mt-3 mb-5">
+  <h1 class="text-center mb-5">トレーニング入力内容確認</h1>
+
+  <div class="col-md-6 mx-auto mb-5">
+    <p>以下の内容で大丈夫ですか？</p>
+    <div class="mb-3">
+      <div class="form-label border-start border-primary border-4 ps-1">
+        <%= t('activerecord.attributes.plactice.name') %>
+      </div>
+      <%= @plactice.name %>
+    </div>
+  </div>
+
+  <%= form_for @plactice, url: plactices_path, data: { turbo: false } do |f| %>
+    <%= f.hidden_field :name %>
+    <div class="d-grid col-md-6 mx-auto">
+      <%= f.button 'OK', class: 'btn btn-lg btn-primary' %>
+    </div>
+  <% end %>
+</div>
