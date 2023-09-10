@@ -6,10 +6,8 @@ class PlacticesController < ApplicationController
   def confirm
     @plactice = Plactice.new(plactice_params)
       if @plactice.valid?
-      # バリデーションが通った場合は confirm ページに偏移
         render 'confirm'
         else
-      # バリデーションエラーがある場合は入力ページに戻る
         render 'new'
       end
   end
@@ -17,7 +15,10 @@ class PlacticesController < ApplicationController
 
   def create
     @plactice = Plactice.new(plactice_params)
-    @plactice.save
+    return render :new if params[:button] == 'back'
+    return redirect_to complete_plactices_url  if @plactice.save
+    
+    render :confirm
   end
 
   def index
@@ -27,6 +28,10 @@ class PlacticesController < ApplicationController
   private
 
   def plactice_params
-    params.require(:plactice).permit(:name)
+    params
+    .require(:plactice)
+    .permit(:name,
+            :weight,
+            :rep)
   end
 end

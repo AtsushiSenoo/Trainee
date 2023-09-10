@@ -4792,3 +4792,440 @@ Processing by PlacticesController#confirm as TURBO_STREAM
 Completed 200 OK in 215ms (Views: 178.3ms | ActiveRecord: 0.0ms | Allocations: 4572)
 
 
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 09:41:01 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (6.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 170.6ms | Allocations: 3006)
+  Rendered layouts/_navbar.erb (Duration: 21.3ms | Allocations: 162)
+  Rendered layouts/_footer.erb (Duration: 23.2ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 2185.3ms | Allocations: 38671)
+Completed 200 OK in 2900ms (Views: 2297.0ms | ActiveRecord: 17.5ms | Allocations: 63403)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 09:44:02 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (8.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230902124443_create_users.rb
+
+
+):
+  
+activerecord (7.0.7.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.7.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.7.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activesupport (7.0.7.2) lib/active_support/file_update_checker.rb:93:in `execute_if_updated'
+activerecord (7.0.7.2) lib/active_record/migration.rb:599:in `block in call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.7.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateUsers (20230902124443)
+  [1m[35m (88.9ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL COMMENT 'お名前', `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL) COMMENT 'ユーザー情報'[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (5.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20230902124443')[0m
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (5.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 09:51:09 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"ベンチプレス"}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/confirm.html.erb within layouts/application
+  Rendered plactices/confirm.html.erb within layouts/application (Duration: 85.4ms | Allocations: 1765)
+  Rendered layouts/_navbar.erb (Duration: 13.1ms | Allocations: 161)
+  Rendered layouts/_footer.erb (Duration: 11.2ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 2828.2ms | Allocations: 39970)
+Completed 200 OK in 3242ms (Views: 3054.8ms | ActiveRecord: 12.0ms | Allocations: 64448)
+
+
+Started POST "/plactices" for 192.168.112.1 at 2023-09-10 09:51:17 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"ベンチプレス"}, "button"=>""}
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/plactices_controller.rb:20:in `create'
+  [1m[36mPlactice Create (6.0ms)[0m  [1m[32mINSERT INTO `plactices` (`name`, `weight`, `rep`, `created_at`, `updated_at`) VALUES ('ベンチプレス', NULL, NULL, '2023-09-10 09:51:18.081706', '2023-09-10 09:51:18.081706')[0m
+  ↳ app/controllers/plactices_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/plactices_controller.rb:20:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/create.html.erb within layouts/application
+  Rendered plactices/create.html.erb within layouts/application (Duration: 29.4ms | Allocations: 167)
+  Rendered layouts/_navbar.erb (Duration: 13.1ms | Allocations: 153)
+  Rendered layouts/_footer.erb (Duration: 14.6ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 234.0ms | Allocations: 3423)
+Completed 200 OK in 381ms (Views: 262.3ms | ActiveRecord: 13.6ms | Allocations: 8325)
+
+
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 10:03:52 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 38.9ms | Allocations: 1945)
+  Rendered layouts/_navbar.erb (Duration: 14.6ms | Allocations: 155)
+  Rendered layouts/_footer.erb (Duration: 13.9ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 568.0ms | Allocations: 14821)
+Completed 200 OK in 708ms (Views: 588.8ms | ActiveRecord: 3.1ms | Allocations: 18444)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 10:05:08 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"スクワット"}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/confirm.html.erb within layouts/application
+  Rendered plactices/confirm.html.erb within layouts/application (Duration: 14.1ms | Allocations: 718)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 131.2ms | Allocations: 3026)
+Completed 200 OK in 174ms (Views: 142.7ms | ActiveRecord: 0.0ms | Allocations: 3811)
+
+
+Started POST "/plactices" for 192.168.112.1 at 2023-09-10 10:05:10 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"スクワット"}, "button"=>""}
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/plactices_controller.rb:20:in `create'
+  [1m[36mPlactice Create (5.8ms)[0m  [1m[32mINSERT INTO `plactices` (`name`, `weight`, `rep`, `created_at`, `updated_at`) VALUES ('スクワット', NULL, NULL, '2023-09-10 10:05:10.557818', '2023-09-10 10:05:10.557818')[0m
+  ↳ app/controllers/plactices_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/plactices_controller.rb:20:in `create'
+Redirected to http://localhost:3000/plactices/complete
+Completed 302 Found in 83ms (ActiveRecord: 18.0ms | Allocations: 2547)
+
+
+Started GET "/plactices/complete" for 192.168.112.1 at 2023-09-10 10:05:10 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#complete as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/complete.html.erb within layouts/application
+  Rendered plactices/complete.html.erb within layouts/application (Duration: 12.2ms | Allocations: 140)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 118.2ms | Allocations: 2655)
+Completed 200 OK in 146ms (Views: 120.3ms | ActiveRecord: 0.0ms | Allocations: 2971)
+
+
+Started GET "/plactices/complete" for 192.168.112.1 at 2023-09-10 10:07:33 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#complete as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/complete.html.erb within layouts/application
+  Rendered plactices/complete.html.erb within layouts/application (Duration: 12.4ms | Allocations: 163)
+  Rendered layouts/_navbar.erb (Duration: 12.1ms | Allocations: 153)
+  Rendered layouts/_footer.erb (Duration: 12.0ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 197.9ms | Allocations: 3655)
+Completed 200 OK in 258ms (Views: 222.4ms | ActiveRecord: 0.0ms | Allocations: 4654)
+
+
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 10:15:22 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 45.8ms | Allocations: 1284)
+  Rendered layouts/_navbar.erb (Duration: 10.7ms | Allocations: 153)
+  Rendered layouts/_footer.erb (Duration: 11.9ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 517.0ms | Allocations: 14039)
+Completed 200 OK in 659ms (Views: 539.7ms | ActiveRecord: 3.8ms | Allocations: 17637)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 10:15:48 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"インクライン"}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/confirm.html.erb within layouts/application
+  Rendered plactices/confirm.html.erb within layouts/application (Duration: 48.5ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 2100)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 0.0ms | Allocations: 2866)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-3 mb-5">
+  <h1 class="text-center mb-5">トレーニング入力内容確認</h1>
+
+  <div class="col-md-6 mx-auto mb-5">
+    <p>以下の内容で大丈夫ですか？</p>
+    <div class="mb-3">
+      <div class="form-label border-start border-primary border-4 ps-1">
+        <%= t('activerecord.attributes.plactice.name') %>
+      </div>
+      <%= @plactice.name %>
+    </div>
+  </div>
+
+  <%= form_for @plactice, url: plactices_path, data: { turbo: false } do |f| %>
+    <%= f.hidden_field :name %>
+    <div class="d-grid col-md-6 mx-auto mb-3">
+      <%= f.button 'OK', class: 'btn btn-lg btn-primary' %>
+    </div>
+    <div class="d-grid col-md-6 mx-auto">
+      <%= f.button '戻る', value: 'back' class: 'btn btn-lg btn-primary' %>
+    </div>
+  <% end %>
+</div>
+):
+1:    <div class="container mt-3 mb-5">
+2:      <h1 class="text-center mb-5">トレーニング入力内容確認</h1>
+3:    
+4:      <div class="col-md-6 mx-auto mb-5">
+5:        <p>以下の内容で大丈夫ですか？</p>
+6:        <div class="mb-3">
+7:          <div class="form-label border-start border-primary border-4 ps-1">
+8:            <%= t('activerecord.attributes.plactice.name') %>
+9:          </div>
+10:          <%= @plactice.name %>
+11:        </div>
+12:      </div>
+13:    
+14:      <%= form_for @plactice, url: plactices_path, data: { turbo: false } do |f| %>
+15:        <%= f.hidden_field :name %>
+16:        <div class="d-grid col-md-6 mx-auto mb-3">
+17:          <%= f.button 'OK', class: 'btn btn-lg btn-primary' %>
+18:        </div>
+19:        <div class="d-grid col-md-6 mx-auto">
+20:          <%= f.button '戻る', value: 'back' class: 'btn btn-lg btn-primary' %>
+21:        </div>
+22:      <% end %>
+23:    </div>
+  
+app/views/plactices/confirm.html.erb:20: syntax error, unexpected `class', expecting ')'
+app/views/plactices/confirm.html.erb:20: syntax error, unexpected `class', expecting ')'
+app/views/plactices/confirm.html.erb:20: syntax error, unexpected `class', expecting ')'
+app/views/plactices/confirm.html.erb:20: syntax error, unexpected `class', expecting ')'
+app/views/plactices/confirm.html.erb:20: syntax error, unexpected `class', expecting ')'
+app/views/plactices/confirm.html.erb:20: syntax error, unexpected `class', expecting ')'
+app/controllers/plactices_controller.rb:10:in `confirm'
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 10:16:34 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"インクライン"}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/confirm.html.erb within layouts/application
+  Rendered plactices/confirm.html.erb within layouts/application (Duration: 45.7ms | Allocations: 958)
+  Rendered layouts/_navbar.erb (Duration: 11.6ms | Allocations: 153)
+  Rendered layouts/_footer.erb (Duration: 12.4ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 223.4ms | Allocations: 4156)
+Completed 200 OK in 292ms (Views: 257.9ms | ActiveRecord: 0.0ms | Allocations: 5762)
+
+
+Started POST "/plactices" for 192.168.112.1 at 2023-09-10 10:16:37 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"インクライン"}, "button"=>"back"}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 14.2ms | Allocations: 840)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 142.3ms | Allocations: 3147)
+Completed 200 OK in 186ms (Views: 156.0ms | ActiveRecord: 0.0ms | Allocations: 3885)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 10:16:50 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"インクライン"}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/confirm.html.erb within layouts/application
+  Rendered plactices/confirm.html.erb within layouts/application (Duration: 1.9ms | Allocations: 450)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 123.6ms | Allocations: 2757)
+Completed 200 OK in 155ms (Views: 125.9ms | ActiveRecord: 0.0ms | Allocations: 3350)
+
+
+Started POST "/plactices" for 192.168.112.1 at 2023-09-10 10:16:51 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"インクライン"}, "button"=>"back"}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 536)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 122.4ms | Allocations: 2843)
+Completed 200 OK in 152ms (Views: 125.4ms | ActiveRecord: 0.0ms | Allocations: 3435)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 10:16:53 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"インクライン"}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/confirm.html.erb within layouts/application
+  Rendered plactices/confirm.html.erb within layouts/application (Duration: 1.8ms | Allocations: 450)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 115.2ms | Allocations: 2757)
+Completed 200 OK in 148ms (Views: 117.9ms | ActiveRecord: 0.0ms | Allocations: 3367)
+
+
+Started POST "/plactices" for 192.168.112.1 at 2023-09-10 10:16:54 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"インクライン"}, "button"=>"back"}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 535)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 110.0ms | Allocations: 2842)
+Completed 200 OK in 138ms (Views: 112.2ms | ActiveRecord: 0.0ms | Allocations: 3434)
+
+
+Started GET "/plactices" for 192.168.112.1 at 2023-09-10 10:18:04 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/index.html.erb within layouts/application
+  Rendered plactices/index.html.erb within layouts/application (Duration: 19.9ms | Allocations: 137)
+  Rendered layouts/_navbar.erb (Duration: 12.0ms | Allocations: 153)
+  Rendered layouts/_footer.erb (Duration: 13.6ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 197.6ms | Allocations: 3635)
+Completed 200 OK in 254ms (Views: 217.1ms | ActiveRecord: 0.0ms | Allocations: 4818)
+
+
+Started GET "/plactices/confirm" for 192.168.112.1 at 2023-09-10 10:18:11 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PlacticesController):
+  
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 10:18:21 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 17.1ms | Allocations: 1105)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 126.3ms | Allocations: 3433)
+Completed 200 OK in 167ms (Views: 128.9ms | ActiveRecord: 0.0ms | Allocations: 3841)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 10:18:25 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"インクライン"}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/confirm.html.erb within layouts/application
+  Rendered plactices/confirm.html.erb within layouts/application (Duration: 45.5ms | Allocations: 794)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 170.6ms | Allocations: 3102)
+Completed 200 OK in 216ms (Views: 185.8ms | ActiveRecord: 0.0ms | Allocations: 3798)
+
+

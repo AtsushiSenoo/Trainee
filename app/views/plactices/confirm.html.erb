@@ -11,10 +11,29 @@
     </div>
   </div>
 
+    <div class="mb-3">
+      <div class="form-label border-start border-primary border-4 ps-1">
+        <%= t('activerecord.attributes.plactice.weight') %>
+      </div>
+      <%= @plactice.weight %>
+    </div>
+
+    <div class="mb-3">
+      <div class="form-label border-start border-primary border-4 ps-1">
+        <%= t('activerecord.attributes.plactice.rep') %>
+      </div>
+      <%= @plactice.rep %>
+    </div>
+
   <%= form_for @plactice, url: plactices_path, data: { turbo: false } do |f| %>
     <%= f.hidden_field :name %>
-    <div class="d-grid col-md-6 mx-auto">
+    <%= f.hidden_field :weight %>
+    <%= f.hidden_field :rep%>
+    <div class="d-grid col-md-6 mx-auto mb-3">
       <%= f.button 'OK', class: 'btn btn-lg btn-primary' %>
+    </div>
+    <div class="d-grid col-md-6 mx-auto">
+      <%= f.button '戻る', value: 'back', class: 'btn btn-lg btn-secondary' %>
     </div>
   <% end %>
 </div>
