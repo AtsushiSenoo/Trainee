@@ -3,3 +3,5 @@ ja:
     attributes:
       plactice:
         name: トレーニング名
+        weight: 重量
+        rep: 回数

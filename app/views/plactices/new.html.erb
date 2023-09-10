@@ -5,7 +5,21 @@
     <div class="col-md-6 mx-auto mb-5">
       <div class="mb-3">
         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
-        <%= f.text_field :name, size: 40, placeholder: 'トレーニング太郎', class: 'form-control' %>
+        <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+      </div>
+    </div>
+
+    <div class="col-md-6 mx-auto mb-5">
+      <div class="mb-3">
+        <%= f.label :weight, class: 'form-label border-start border-primary border-4 ps-1' %> (kgm)
+        <%= f.text_field :weight, size: 40, placeholder: '重量', class: 'form-control' %>
+      </div>
+    </div>
+
+    <div class="col-md-6 mx-auto mb-5">
+      <div class="mb-3">
+        <%= f.label :rep, class: 'form-label border-start border-primary border-4 ps-1' %> (回)
+        <%= f.text_field :rep, size: 40, placeholder: '回数', class: 'form-control' %>
       </div>
     </div>
 

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :plactices do  
     collection do
       post :confirm
+      get :complete
     end
   end
   
