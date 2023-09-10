@@ -6,20 +6,23 @@
       <div class="mb-3">
         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+        <%= render partial: 'shared/error_messages', locals: { record: @plactice, symbol: :name } %>
       </div>
     </div>
 
     <div class="col-md-6 mx-auto mb-5">
       <div class="mb-3">
-        <%= f.label :weight, class: 'form-label border-start border-primary border-4 ps-1' %> (kgm)
+        <%= f.label :weight, class: 'form-label border-start border-primary border-4 ps-1' %> (kg)
         <%= f.text_field :weight, size: 40, placeholder: '重量', class: 'form-control' %>
+        <%= render partial: 'shared/error_messages', locals: { record: @plactice, symbol: :weight } %>
       </div>
     </div>
 
     <div class="col-md-6 mx-auto mb-5">
       <div class="mb-3">
-        <%= f.label :rep, class: 'form-label border-start border-primary border-4 ps-1' %> (回)
-        <%= f.text_field :rep, size: 40, placeholder: '回数', class: 'form-control' %>
+        <%= f.label :rep, class: 'form-label border-start border-primary border-4 ps-1' %> (rep)
+        <%= f.text_field :rep, size: 40, placeholder: 'rep数', class: 'form-control' %>
+        <%= render partial: 'shared/error_messages', locals: { record: @plactice, symbol: :rep } %>
       </div>
     </div>
 

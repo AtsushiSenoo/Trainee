@@ -5229,3 +5229,2340 @@ Processing by PlacticesController#confirm as HTML
 Completed 200 OK in 216ms (Views: 185.8ms | ActiveRecord: 0.0ms | Allocations: 3798)
 
 
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:06:07 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (6.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 56.4ms | Allocations: 3788)
+  Rendered layouts/_navbar.erb (Duration: 13.1ms | Allocations: 161)
+  Rendered layouts/_footer.erb (Duration: 15.6ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 2733.8ms | Allocations: 38613)
+Completed 200 OK in 3082ms (Views: 2783.8ms | ActiveRecord: 15.3ms | Allocations: 62720)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:06:12 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 4216)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 151.3ms | Allocations: 6700)
+Completed 200 OK in 186ms (Views: 154.1ms | ActiveRecord: 0.0ms | Allocations: 8615)
+
+
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:11:39 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PlacticesController#new as HTML
+Completed 500 Internal Server Error in 299ms (ActiveRecord: 19.1ms | Allocations: 22301)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 6 column 16>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:11:46 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.0ms | Allocations: 1611)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 6 column 16>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:12:10 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 56.9ms | Allocations: 3787)
+  Rendered layouts/_navbar.erb (Duration: 10.9ms | Allocations: 161)
+  Rendered layouts/_footer.erb (Duration: 9.9ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 1507.8ms | Allocations: 37580)
+Completed 200 OK in 1767ms (Views: 1529.2ms | ActiveRecord: 13.8ms | Allocations: 43099)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:16:51 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 16.8ms | Allocations: 4274)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 382.2ms | Allocations: 16330)
+Completed 422 Unprocessable Entity in 491ms (Views: 386.5ms | ActiveRecord: 12.1ms | Allocations: 21494)
+
+
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:18:42 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 57.1ms | Allocations: 3818)
+  Rendered layouts/_navbar.erb (Duration: 11.3ms | Allocations: 161)
+  Rendered layouts/_footer.erb (Duration: 12.4ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 1479.3ms | Allocations: 37804)
+Completed 200 OK in 1807ms (Views: 1525.4ms | ActiveRecord: 12.7ms | Allocations: 61906)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:18:47 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 13.5ms | Allocations: 4216)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 112.2ms | Allocations: 6700)
+Completed 422 Unprocessable Entity in 149ms (Views: 114.8ms | ActiveRecord: 0.0ms | Allocations: 8625)
+
+
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:22:58 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PlacticesController#new as HTML
+Completed 500 Internal Server Error in 298ms (ActiveRecord: 20.9ms | Allocations: 22301)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 6 column 17>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:23:48 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 64.4ms | Allocations: 3760)
+  Rendered layouts/_navbar.erb (Duration: 13.0ms | Allocations: 161)
+  Rendered layouts/_footer.erb (Duration: 14.9ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 1538.1ms | Allocations: 37535)
+Completed 200 OK in 1818ms (Views: 1558.0ms | ActiveRecord: 12.0ms | Allocations: 43058)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:23:53 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 14.0ms | Allocations: 4216)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 141.5ms | Allocations: 6700)
+Completed 422 Unprocessable Entity in 175ms (Views: 144.4ms | ActiveRecord: 0.0ms | Allocations: 8617)
+
+
+Started GET "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:24:57 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PlacticesController):
+  
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:25:04 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 14.0ms | Allocations: 3910)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 137.0ms | Allocations: 6278)
+Completed 422 Unprocessable Entity in 175ms (Views: 139.5ms | ActiveRecord: 0.0ms | Allocations: 7724)
+
+
+Started GET "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:27:28 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PlacticesController):
+  
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:28:21 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1492)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 420.9ms | Allocations: 13632)
+Completed 200 OK in 532ms (Views: 424.6ms | ActiveRecord: 16.8ms | Allocations: 17360)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:28:28 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 3929)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 119.6ms | Allocations: 6298)
+Completed 422 Unprocessable Entity in 152ms (Views: 122.5ms | ActiveRecord: 0.0ms | Allocations: 7962)
+
+
+Started GET "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:40:30 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PlacticesController):
+  
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:40:43 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1567)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 437.2ms | Allocations: 13731)
+Completed 200 OK in 611ms (Views: 441.2ms | ActiveRecord: 3.6ms | Allocations: 17263)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:40:46 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 3717)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 124.1ms | Allocations: 6093)
+Completed 422 Unprocessable Entity in 158ms (Views: 126.8ms | ActiveRecord: 0.0ms | Allocations: 7759)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:42:20 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 75.9ms | Allocations: 2147)
+  Rendered layout layouts/application.html.erb (Duration: 77.2ms | Allocations: 2231)
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 21.4ms | Allocations: 7227)
+
+
+  
+ActionView::Template::Error (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+    4:   <%= form_for @plactice, url: confirm_plactices_path, data: { turbo: false } do |f| %>
+    5:     <div class="col-md-6 mx-auto mb-5">
+    6:       <div class="mb-3">
+    7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+    8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+    9:         <% @plactice.errors.full_messages_for(:name).each do |message| %>
+   10:           <div class="text-danger">*<%= message %></div>
+  
+app/views/plactices/new.html.erb:7
+app/views/plactices/new.html.erb:4
+app/controllers/plactices_controller.rb:9:in `confirm'
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:43:37 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 82.6ms | Allocations: 2063)
+  Rendered layout layouts/application.html.erb (Duration: 84.0ms | Allocations: 2147)
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 14.4ms | Allocations: 7179)
+
+
+  
+ActionView::Template::Error (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+    4:   <%= form_for @plactice, url: confirm_plactices_path, data: { turbo: false } do |f| %>
+    5:     <div class="col-md-6 mx-auto mb-5">
+    6:       <div class="mb-3">
+    7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+    8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+    9:         <% @plactice.errors.full_messages_for(:name).each do |message| %>
+   10:           <div class="text-danger">*<%= message %></div>
+  
+app/views/plactices/new.html.erb:7
+app/views/plactices/new.html.erb:4
+app/controllers/plactices_controller.rb:9:in `confirm'
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:44:21 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 80.4ms | Allocations: 2063)
+  Rendered layout layouts/application.html.erb (Duration: 82.0ms | Allocations: 2147)
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 10.0ms | Allocations: 7174)
+
+
+  
+ActionView::Template::Error (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+    4:   <%= form_for @plactice, url: confirm_plactices_path, data: { turbo: false } do |f| %>
+    5:     <div class="col-md-6 mx-auto mb-5">
+    6:       <div class="mb-3">
+    7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+    8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+    9:         <% @plactice.errors.full_messages_for(:name).each do |message| %>
+   10:           <div class="text-danger">*<%= message %></div>
+  
+app/views/plactices/new.html.erb:7
+app/views/plactices/new.html.erb:4
+app/controllers/plactices_controller.rb:9:in `confirm'
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:47:45 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 89.2ms | Allocations: 2138)
+  Rendered layout layouts/application.html.erb (Duration: 90.8ms | Allocations: 2222)
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 17.0ms | Allocations: 7249)
+
+
+  
+ActionView::Template::Error (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+    4:   <%= form_for @plactice, url: confirm_plactices_path, data: { turbo: false } do |f| %>
+    5:     <div class="col-md-6 mx-auto mb-5">
+    6:       <div class="mb-3">
+    7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+    8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+    9:         <% @plactice.errors.full_messages_for(:name).each do |message| %>
+   10:           <div class="text-danger">*<%= message %></div>
+  
+app/views/plactices/new.html.erb:7
+app/views/plactices/new.html.erb:4
+app/controllers/plactices_controller.rb:9:in `confirm'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:48:54 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 79.0ms | Allocations: 2106)
+  Rendered layout layouts/application.html.erb (Duration: 80.6ms | Allocations: 2190)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 10.6ms | Allocations: 5885)
+
+
+  
+ActionView::Template::Error (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+    4:   <%= form_for @plactice, url: confirm_plactices_path, data: { turbo: false } do |f| %>
+    5:     <div class="col-md-6 mx-auto mb-5">
+    6:       <div class="mb-3">
+    7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+    8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+    9:         <% @plactice.errors.full_messages_for(:name).each do |message| %>
+   10:           <div class="text-danger">*<%= message %></div>
+  
+app/views/plactices/new.html.erb:7
+app/views/plactices/new.html.erb:4
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:51:48 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PlacticesController#new as HTML
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 15.1ms | Allocations: 22337)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:55:19 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+Completed 500 Internal Server Error in 223ms (ActiveRecord: 18.0ms | Allocations: 4515)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:55:23 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.0ms | Allocations: 1626)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:55:39 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 17.0ms | Allocations: 4505)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:55:43 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms | Allocations: 1626)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:56:19 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:56:19 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PlacticesController#new as HTML
+Processing by PlacticesController#new as HTML
+Completed 500 Internal Server Error in 290ms (ActiveRecord: 8.4ms | Allocations: 22755)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Completed 500 Internal Server Error in 572ms (ActiveRecord: 27.9ms | Allocations: 113101)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:56:24 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 0.0ms | Allocations: 1645)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:56:49 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 18.3ms | Allocations: 4553)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:56:54 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 0.0ms | Allocations: 1616)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+  
+i18n (1.14.1) lib/i18n/backend/base.rb:259:in `rescue in load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:251:in `load_yml'
+i18n (1.14.1) lib/i18n/backend/base.rb:233:in `load_file'
+i18n (1.14.1) lib/i18n/backend/base.rb:17:in `block in load_translations'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `each'
+i18n (1.14.1) lib/i18n/backend/base.rb:16:in `load_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:84:in `init_translations'
+i18n (1.14.1) lib/i18n/backend/simple.rb:50:in `available_locales'
+i18n (1.14.1) lib/i18n/config.rb:45:in `available_locales'
+i18n (1.14.1) lib/i18n.rb:70:in `available_locales'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:22:in `build_path_regex'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:41:in `parse'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:146:in `build_unbound_template'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:168:in `block in unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `map'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:167:in `unbound_templates_from_path'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:133:in `block in _find_all'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb:33:in `compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `block in compute_if_absent'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb:25:in `compute_if_absent'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:131:in `_find_all'
+actionview (7.0.7.2) lib/action_view/template/resolver.rb:65:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:54:in `block in find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:69:in `block (2 levels) in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:68:in `block in search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `each'
+actionview (7.0.7.2) lib/action_view/path_set.rb:67:in `search_combinations'
+actionview (7.0.7.2) lib/action_view/path_set.rb:53:in `find_all'
+actionview (7.0.7.2) lib/action_view/path_set.rb:61:in `exists?'
+actionview (7.0.7.2) lib/action_view/lookup_context.rb:140:in `exists?'
+actionview (7.0.7.2) lib/action_view/view_paths.rb:11:in `template_exists?'
+actionpack (7.0.7.2) lib/action_controller/metal/implicit_render.rb:34:in `default_render'
+actionpack (7.0.7.2) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:57:05 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 56.5ms | Allocations: 3847)
+  Rendered layouts/_navbar.erb (Duration: 15.0ms | Allocations: 161)
+  Rendered layouts/_footer.erb (Duration: 16.0ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 1853.9ms | Allocations: 37662)
+Completed 200 OK in 2140ms (Views: 1875.0ms | ActiveRecord: 10.6ms | Allocations: 43224)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:57:12 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 19.3ms | Allocations: 4471)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 121.0ms | Allocations: 6955)
+Completed 422 Unprocessable Entity in 161ms (Views: 127.1ms | ActiveRecord: 0.0ms | Allocations: 8874)
+
+
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 18:59:17 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 47.0ms | Allocations: 3865)
+  Rendered layouts/_navbar.erb (Duration: 13.4ms | Allocations: 161)
+  Rendered layouts/_footer.erb (Duration: 11.6ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 1442.4ms | Allocations: 37740)
+Completed 200 OK in 1798ms (Views: 1480.9ms | ActiveRecord: 11.1ms | Allocations: 62058)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 18:59:57 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 100.1ms | Allocations: 3070)
+  Rendered layout layouts/application.html.erb (Duration: 102.0ms | Allocations: 3164)
+Completed 500 Internal Server Error in 198ms (ActiveRecord: 11.4ms | Allocations: 8352)
+
+
+  
+ActionView::Template::Error (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+    4:   <%= form_for @plactice, url: confirm_plactices_path, data: { turbo: false } do |f| %>
+    5:     <div class="col-md-6 mx-auto mb-5">
+    6:       <div class="mb-3">
+    7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+    8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+    9:         <% @plactice.errors.full_messages_for(:name).each do |message| %>
+   10:           <div class="text-danger">*<%= message %></div>
+  
+app/views/plactices/new.html.erb:7
+app/views/plactices/new.html.erb:4
+app/controllers/plactices_controller.rb:9:in `confirm'
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 19:00:17 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 68.3ms | Allocations: 2026)
+  Rendered layout layouts/application.html.erb (Duration: 69.9ms | Allocations: 2103)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.0ms | Allocations: 3675)
+
+
+  
+ActionView::Template::Error (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+    4:   <%= form_for @plactice, url: confirm_plactices_path, data: { turbo: false } do |f| %>
+    5:     <div class="col-md-6 mx-auto mb-5">
+    6:       <div class="mb-3">
+    7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+    8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+    9:         <% @plactice.errors.full_messages_for(:name).each do |message| %>
+   10:           <div class="text-danger">*<%= message %></div>
+  
+app/views/plactices/new.html.erb:7
+app/views/plactices/new.html.erb:4
+app/controllers/plactices_controller.rb:9:in `confirm'
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 19:00:38 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 78.6ms | Allocations: 2001)
+  Rendered layout layouts/application.html.erb (Duration: 80.2ms | Allocations: 2076)
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.0ms | Allocations: 3496)
+
+
+  
+ActionView::Template::Error (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 16 column 20>):
+    4:   <%= form_for @plactice, url: confirm_plactices_path, data: { turbo: false } do |f| %>
+    5:     <div class="col-md-6 mx-auto mb-5">
+    6:       <div class="mb-3">
+    7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+    8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+    9:         <% @plactice.errors.full_messages_for(:name).each do |message| %>
+   10:           <div class="text-danger">*<%= message %></div>
+  
+app/views/plactices/new.html.erb:7
+app/views/plactices/new.html.erb:4
+app/controllers/plactices_controller.rb:9:in `confirm'
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 19:02:38 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 80.6ms | Allocations: 2035)
+  Rendered layout layouts/application.html.erb (Duration: 82.3ms | Allocations: 2120)
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 10.2ms | Allocations: 7158)
+
+
+  
+ActionView::Template::Error (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 8 column 20>):
+    4:   <%= form_for @plactice, url: confirm_plactices_path, data: { turbo: false } do |f| %>
+    5:     <div class="col-md-6 mx-auto mb-5">
+    6:       <div class="mb-3">
+    7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+    8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+    9:         <% @plactice.errors.full_messages_for(:name).each do |message| %>
+   10:           <div class="text-danger">*<%= message %></div>
+  
+app/views/plactices/new.html.erb:7
+app/views/plactices/new.html.erb:4
+app/controllers/plactices_controller.rb:9:in `confirm'
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 19:07:38 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+Completed 500 Internal Server Error in 282ms (ActiveRecord: 18.4ms | Allocations: 25676)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 8 column 20>):
+  
+app/controllers/plactices_controller.rb:9:in `confirm'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 19:09:58 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 52.5ms | Allocations: 3592)
+  Rendered layouts/_navbar.erb (Duration: 10.7ms | Allocations: 161)
+  Rendered layouts/_footer.erb (Duration: 11.6ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 1528.5ms | Allocations: 37402)
+Completed 200 OK in 1796ms (Views: 1549.6ms | ActiveRecord: 17.3ms | Allocations: 42989)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 19:10:03 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 4122)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 182.7ms | Allocations: 6492)
+Completed 422 Unprocessable Entity in 227ms (Views: 185.3ms | ActiveRecord: 0.0ms | Allocations: 8158)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 19:12:58 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 13.2ms | Allocations: 4091)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 419.9ms | Allocations: 16153)
+Completed 200 OK in 513ms (Views: 423.3ms | ActiveRecord: 11.5ms | Allocations: 21174)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 19:17:43 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 82.7ms | Allocations: 2139)
+  Rendered layout layouts/application.html.erb (Duration: 84.3ms | Allocations: 2224)
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 11.5ms | Allocations: 7275)
+
+
+  
+ActionView::Template::Error (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 13 column 20>):
+    4:   <%= form_for @plactice, url: confirm_plactices_path, data: { turbo: false } do |f| %>
+    5:     <div class="col-md-6 mx-auto mb-5">
+    6:       <div class="mb-3">
+    7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+    8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+    9:         <% @plactice.errors.full_messages_for(:name).each do |message| %>
+   10:           <div class="text-danger">*<%= message %></div>
+  
+app/views/plactices/new.html.erb:7
+app/views/plactices/new.html.erb:4
+app/controllers/plactices_controller.rb:9:in `confirm'
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 19:18:02 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 85.4ms | Allocations: 2055)
+  Rendered layout layouts/application.html.erb (Duration: 87.1ms | Allocations: 2140)
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 14.0ms | Allocations: 7197)
+
+
+  
+ActionView::Template::Error (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 13 column 20>):
+    4:   <%= form_for @plactice, url: confirm_plactices_path, data: { turbo: false } do |f| %>
+    5:     <div class="col-md-6 mx-auto mb-5">
+    6:       <div class="mb-3">
+    7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+    8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+    9:         <% @plactice.errors.full_messages_for(:name).each do |message| %>
+   10:           <div class="text-danger">*<%= message %></div>
+  
+app/views/plactices/new.html.erb:7
+app/views/plactices/new.html.erb:4
+app/controllers/plactices_controller.rb:9:in `confirm'
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 19:21:21 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 90.0ms | Allocations: 2098)
+  Rendered layout layouts/application.html.erb (Duration: 91.8ms | Allocations: 2182)
+Completed 500 Internal Server Error in 247ms (ActiveRecord: 11.4ms | Allocations: 5913)
+
+
+  
+ActionView::Template::Error (can not load translations from /myapp/config/locales/ja.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 13 column 20>):
+    4:   <%= form_for @plactice, url: confirm_plactices_path, data: { turbo: false } do |f| %>
+    5:     <div class="col-md-6 mx-auto mb-5">
+    6:       <div class="mb-3">
+    7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+    8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+    9:         <% @plactice.errors.full_messages_for(:name).each do |message| %>
+   10:           <div class="text-danger">*<%= message %></div>
+  
+app/views/plactices/new.html.erb:7
+app/views/plactices/new.html.erb:4
+Started GET "/plactices/new" for 192.168.112.1 at 2023-09-10 19:25:45 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PlacticesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 53.7ms | Allocations: 3815)
+  Rendered layouts/_navbar.erb (Duration: 11.6ms | Allocations: 161)
+  Rendered layouts/_footer.erb (Duration: 13.5ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 1350.8ms | Allocations: 37638)
+Completed 200 OK in 1776ms (Views: 1394.2ms | ActiveRecord: 20.0ms | Allocations: 61942)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 19:25:52 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 2665)
+  Rendered layouts/_navbar.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 129.9ms | Allocations: 5149)
+Completed 200 OK in 167ms (Views: 132.3ms | ActiveRecord: 0.0ms | Allocations: 7070)
+
+
+Started POST "/plactices/confirm" for 192.168.112.1 at 2023-09-10 23:24:04 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PlacticesController#confirm as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "plactice"=>{"name"=>"", "weight"=>"", "rep"=>""}, "button"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering plactices/new.html.erb within layouts/application
+  Rendered plactices/new.html.erb within layouts/application (Duration: 347.1ms | Allocations: 7196)
+  Rendered layout layouts/application.html.erb (Duration: 348.8ms | Allocations: 7290)
+Completed 500 Internal Server Error in 427ms (ActiveRecord: 0.0ms | Allocations: 9613)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_error_maessages with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/myapp/app/views"
+  * "/usr/local/bundle/gems/turbo-rails-1.4.0/app/views"
+  * "/usr/local/bundle/gems/actiontext-7.0.7.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-7.0.7.2/app/views"
+
+Did you mean?  shared/error_messages
+               action_text/attachables/remote_image
+               action_text/attachables/missing_attachable
+               action_text/attachment_galleries/attachment_gallery
+               active_storage/blobs/blob
+               layouts/footer):
+     6:       <div class="mb-3">
+     7:         <%= f.label :name, class: 'form-label border-start border-primary border-4 ps-1' %>
+     8:         <%= f.text_field :name, size: 40, placeholder: 'トレーニング名', class: 'form-control' %>
+     9:         <%= render partial: 'shared/error_maessages', locals: { record: @plactice, symbol: :name } %>
+    10:       </div>
+    11:     </div>
+    12: 
+  
+app/views/plactices/new.html.erb:9
+app/views/plactices/new.html.erb:4
+app/controllers/plactices_controller.rb:9:in `confirm'
