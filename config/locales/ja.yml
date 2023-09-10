@@ -1,7 +1,17 @@
 ja:
   activerecord:
+    errors:
+      models:
+        plactice:
+          attributes:
+            name: 
+              blank: "名前を入力してください"
+            weight: 
+              not_a_number: "重量は数値で入力してください"
+            rep: 
+              not_a_number: "rep数は数値で入力してください"
     attributes:
       plactice:
-        name: トレーニング名
-        weight: 重量
-        rep: 回数
+        name: "トレーニング名"
+        weight: "重量"
+        rep: "回数"
