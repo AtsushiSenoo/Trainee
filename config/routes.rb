@@ -3,12 +3,16 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  resources :plactices do  
+  resources :plactices do
     collection do
       post :confirm
       get :complete
     end
   end
-  
+
+  devise_for :users, controllers: { registrations: 'users/registrations' }
+  get "users/show" => "users#show"
+
+
 
 end
