@@ -8186,3 +8186,17 @@ puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
 puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
 puma (5.6.7) lib/puma/server.rb:443:in `process_client'
 puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_in" for 192.168.112.1 at 2023-09-18 14:07:52 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 1004)
+  Rendered /usr/local/bundle/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 157.9ms | Allocations: 6191)
+  Rendered layouts/_navbar.erb (Duration: 11.4ms | Allocations: 154)
+  Rendered layouts/_footer.erb (Duration: 13.7ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 1515.7ms | Allocations: 39862)
+Completed 200 OK in 1850ms (Views: 1719.6ms | ActiveRecord: 20.5ms | Allocations: 66641)
+
+
